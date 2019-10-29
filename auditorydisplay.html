@@ -1,0 +1,141 @@
+<!Doctype html>
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">   
+
+   
+<title>Auditory display</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+
+<body>
+   
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-large">Here you'll find a bit about my research activities</h1>
+  <p class="w3-normal"></p>
+     <br>
+<p class="w3-small">
+</p>
+</header>
+    
+<!-- Navigation bar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Research</a>
+    <a href="teaching.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Teaching</a>
+    <a href="links.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Links</a>
+    <a href="misc.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Miscellanous</a>
+  </div>
+</div>
+
+
+<!-- TOPIC -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>More examples on seismic data sonification</h1>
+      <h2 class="w3-padding-32">Our Demo presented at <a href="https://cmmr2019.prism.cnrs.fr/"> CMMR </a> in Marseille, Oct. 2019, got the <b>"best demo award"</b>!!</h2>
+	
+      <h5 class="w3-padding-32"> Kilaeua volcano</h5> <a href="https://vimeo.com/335153372"> <img src="pics/kilauea.png", width=400> </a>
+      <p class="w3-text-grey"> <b> Context</b> <br> The eruption of the Kilauea volcano on Hawaii in the summer of 2018 marked the end of a long eruption phase that began in 1983. <br> First, two "tectonic" earthquakes occur off the SE shore of the island. Soon after, seismicity migrates to and rapidly increases in the vicinity of the crater. Then it enters a phase in which a Mag. 5 earthquake occurred every single day for over a month, which is extremely rare. Each event was preceded by a rapidly increasing number of foreshocks (like popcorn popping) up to the time of the >M5, followed by a brief silence (~2 hours), and then a repeat. These earthquakes had no aftershocks, only foreshocks, which is also extremely rare. <br> Also, every day, there was an eruption of lava out of vents that were opening up about 40-50 km east of the volcano, down the rift. It is known that the lavas in the Kilauea caldera (crater) are the same as those that were erupting down the rift, strongly suggesting that the cyclic patterns reflected a coupling to the dynamics governing those eruptions. The scratching sound may be associated with magma moving through the crustal "plumbing system" to the vents. <br> Can we hear the spatio-temporal patterns? Can we track down the lava flow?</p>
+      <p class="w3-text-grey"> <b>Data</b> <br> 
+	<ul> <li> Catalog of 41,328 events greater than M1.5 </li>
+	     <li> Discrete seismic recordings for each event (80 seconds, fs=20 Hz) </li>
+	     <li> Observation window: 5 months (April to August 2018) </li>
+	</ul>
+      </p>
+      <p class="w3-text-grey"> <b>Sonification</b> <br> Track compression with factor 132,192 (5 months in 100 seconds)
+	<ul> <li> "K1a": audification of the seismic waveforms, compressed in time: speed factor 267 (80 second-events -> 0.3 second-sounds), each waveform placed at the correct relative time in the timeline.</li>
+	     <li> "K1c": each event replaced by a sound (clicks, chirps, chirps with magnitude-dependant frequency).Catalog of 41,328 events greater than M1.5 </li>
+	</ul>
+      </p>
+      <p class="w3-text-grey"> <b>Spatialisation</b> It is either available for <a href="https://drive.google.com/open?id=1FLGAVMQqqVRgV6Sb6O_36KwPw09imshW"> 4 channels </a>, at each corner of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or as a <a href="https://drive.google.com/open?id=1kAMdYb4zlHY3qJe5DQbrB1auzCJQ99ni"> stereo file </a> (ongoing work).
+      </p>
+
+      <h5 class="w3-padding-32"> Episodic tremor and slip (ETS)</h5> <a href="https://drive.google.com/open?id=12UCpH_0ksfFOKWM7RbFBaRTfVZTUDca6"> <img src="pics/ets.png", width=400> </a>
+      <p class="w3-text-grey"> <b> Context</b> <br> In the subduction zone of the northwestern coast of the USA and Canada, "slow" earthquakes are observed (lasting ~ 2 weeks every 14 months in this region). <br> They send out very weak, but long-lasting seismic waves compared to regular earthquakes, called "tremor". <br> The location of the tremor in time - approximately the location where the slow-earthquake process is active - can be followed by locating the source of the seismic waves at depth (~ 40 km deep on the subduction fault). <br> The relatively slow velocity of the process allows us to track the slow-earthquake migration process along the fault. <br>Can you hear it moving?</p>
+      <p class="w3-text-grey"> <b>Data</b> <br> 
+	<ul> <li> 33880 six-minute-long seismic recordings (fs=20 Hz) from 55 stations </li>
+	     <li> Observation window: 5 months </li>
+	</ul>
+      </p>
+      <p class="w3-text-grey"> <b>Sonification</b> <br> Track compression with factor 264,384 (5 months in 50 seconds)
+	<ul> <li> "E1a": audification of seismic waveforms, acceleration factor 360 </li>
+	     <li> "E1b": envelope extraction from seismic waveforms, fill with noise (either low-passed at 300 Hz or band-passed between 100 and 3000 Hz) </li>
+	     <li> "E1c": each recording replaced by a sound (clicks, chirps, chirps with magnitude-dependant frequency) </li>
+	</ul>
+      </p>
+      <p class="w3-text-grey"> <b>Spatialisation</b> It is either available for <a href="https://drive.google.com/open?id=17Vo8lHDHgYS4TJJ8OOlbIcaMLZ6mFUyE"> 4 channels </a>, at NW, NE, SE, and SW corners of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or as a <a href="https://drive.google.com/open?id=1rYcHeTCCtCoMowMQoZHPn8uG1Gww4rkX"> stereo </a> file.
+      </p>
+
+      <h5 class="w3-padding-32"> Earthquake swarms in Pollino National Park, Italy</h5><img src="pics/pollinoscreenshot.png", width=400>
+      <p class="w3-text-grey"> <b> Context</b> <br> We observe the micro-seismicity in the South of Italy (N-E of Calabrian subduction zone). <br> Made of thousands of small earthquakes, the swarm sequence started in October 2010 and continues since then (max. magnitude: 5.0 on 10/25/2012). <br> Can we hear the spatio-temporal patterns within the swarm? Can we tell relevant seismic information from noise, including anthropogenic noise?
+      </p>
+      <p class="w3-text-grey"> <b>Data</b> <br> 
+	<ul> <li> Continuous seismic recordings (fs=20 Hz) from 7 stations</li>
+	     <li>micro-seismicity -> event catalog non-existing or non-relevant</li>
+	     <li>Observation window: 24 hours (April, 29th 2015)</li>
+	</ul>
+      </p>
+      <p class="w3-text-grey"> <b>Sonification</b> <br> Track compression with factor 1440 (1 day in 1 minute)
+	<ul> <li> "Pa": audification of seismic waveforms</li>
+	     <li> "Pb": envelope extraction from seismic waveforms, then fill with noise (either low-passed at 300 Hz or band-passed between 100 and 3000 Hz)</li>
+	</ul>
+      </p>
+      <p class="w3-text-grey"> <b>Spatialisation</b> It is either available for <a href="https://drive.google.com/open?id=1ZnnIL4EOS_mhmBJOUKpwOBwHMaa2qfZj"> 4 channels </a>, at each corner of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or as a <a href="https://drive.google.com/open?id=1jc6HqmfiabddM2zceIdzIm4qB9OjYOwo"> stereo file </a> (ongoing work). 
+      </p>
+
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Many many earthquakes at the Geysers Geothermal Field, CA</h1>
+      <p class="w3-text-grey"> We got an article in Science Advances called "Machine learning reveals cyclic changes in seismic source spectra in Geysers geothermal field" (B. Holtzman, A. Paté, J. Paisley, F. Waldhauser, D. Repetto), whose abstract goes like this: <br> The earthquake rupture process comprises complex interactions of stress, fracture, and frictional properties. New machine learning methods demonstrate great potential to reveal patterns in time-dependent spectral properties of seismic signals and enable identification of changes in faulting processes. Clustering of 46,000 earthquakes of 0.3 < M L < 1.5 from the Geysers geothermal field (CA) yields groupings that have no reservoir-scale spatial patterns but clear temporal patterns. Events with similar spectral properties repeat on annual cycles within each cluster and track changes in the water injection rates into the Geysers reservoir, indicating that changes in acoustic properties and faulting processes accompany changes in thermomechanical state. The methods open new means to identify and characterize subtle changes in seismic source properties, with applications to tectonic and geothermal seismicity </p>
+
+
+      <p class="w3-text-grey">The movie (with sounds) that complements our article is <a href="https://advances.sciencemag.org/highwire/filestream/204266/field_highwire_adjunct_files/2/aao2929_movieS1.mp4"> here </a>, and you can listen to the audification of the most typical earthquake signals <a href="https://advances.sciencemag.org/highwire/filestream/204266/field_highwire_adjunct_files/0/aao2929_AudioS1_to_S24.zip"> here </a> </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- TOPIC -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Human-induced earthquakes in Oklahoma</h1>
+      <h5 class="w3-padding-32"></h5>
+
+      <p class="w3-text-grey">Explanations under construction... But data is already hearable <a href="http://hestia.lgs.jussieu.fr/~boschil/sonification.html"> here </a> </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
