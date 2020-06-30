@@ -56,11 +56,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 	</ul>
       </p>
       <p class="w3-text-grey"> <b>Sonification</b> <br> Track compression with factor 132,192 (5 months in 100 seconds)
-	<ul> <li> "K1a": audification of the seismic waveforms, compressed in time: speed factor 267 (80 second-events -> 0.3 second-sounds), each waveform placed at the correct relative time in the timeline.</li>
-	     <li> "K1c": each event replaced by a sound (clicks, chirps, chirps with magnitude-dependant frequency).Catalog of 41,328 events greater than M1.5 </li>
+	<ul> <li> "K1": audification of the seismic waveforms, compressed in time: speed factor 267 (80 second-events -> 0.3 second-sounds), each waveform placed at the correct relative time in the timeline.</li>
+	     <li> "K3a": each event replaced by a sound (clicks). Catalog of 41,328 events greater than M1.5 </li>
+	     <li> "K3b": each event replaced by a sound (clicks band-passed around 4 410 Hz, Butterworth filter of order 1 and quality factor 1). Catalog of 41,328 events greater than M1.5 </li>
+	     <li> "K3c": each event replaced by a sound (descending chirps, from 300 to 150 Hz). Catalog of 41,328 events greater than M1.5 </li>
+	     <li> "K3d": each event replaced by a sound (descending chirps, the higher the magnitude, the lower the start frequency). Catalog of 41,328 events greater than M1.5 </li>
 	</ul>
       </p>
-      <p class="w3-text-grey"> <b>Spatialisation</b> It is either available for <a href="https://drive.google.com/open?id=1FLGAVMQqqVRgV6Sb6O_36KwPw09imshW"> 4 channels </a>, at each corner of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or as a <a href="https://drive.google.com/open?id=1kAMdYb4zlHY3qJe5DQbrB1auzCJQ99ni"> stereo file </a> (ongoing work).
+      <p class="w3-text-grey"> <b>Spatialisation</b> Rendered movies and sound tracks are available here: <a href="https://drive.google.com/drive/folders/10w3bcQ6kxXOnxIDiqnnaGLC8V0qb_T0o?usp=sharing"> </a> for 4 speakers, 1 at each corner of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or for a stereo setup
       </p>
 
       <h5 class="w3-padding-32"> Episodic tremor and slip (ETS)</h5> <a href="https://drive.google.com/open?id=12UCpH_0ksfFOKWM7RbFBaRTfVZTUDca6"> <img src="pics/ets.png", width=400> </a>
@@ -71,12 +74,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 	</ul>
       </p>
       <p class="w3-text-grey"> <b>Sonification</b> <br> Track compression with factor 264,384 (5 months in 50 seconds)
-	<ul> <li> "E1a": audification of seismic waveforms, acceleration factor 360 </li>
-	     <li> "E1b": envelope extraction from seismic waveforms, fill with noise (either low-passed at 300 Hz or band-passed between 100 and 3000 Hz) </li>
-	     <li> "E1c": each recording replaced by a sound (clicks, chirps, chirps with magnitude-dependant frequency) </li>
+	<ul> <li> "E1": audification of seismic waveforms, acceleration factor 360 </li>
+	     <li> "E2a": envelope extraction from seismic waveforms, filled with Gaussian noise (low-passed at 300 Hz) </li>
+	     <li> "E2b": envelope extraction from seismic waveforms, filled with Gaussian noise (band-passed between 100 and 3000 Hz) </li>
+	     <li> "E3a": each recording replaced by a sound (clicks) </li>
+	     <li> "E3b": each recording replaced by a sound (clicks band-passed around 4 410 Hz, Butterworth filter of order 1 and quality factor 1) </li>
+	     <li> "E3c": each recording replaced by a sound (descending chirps, from 300 to 150 Hz) </li>
+	     <li> "E3d": each recording replaced by a sound (descending chirps, the higher the magnitude, the lower the start frequency) </li>
 	</ul>
       </p>
-      <p class="w3-text-grey"> <b>Spatialisation</b> It is either available for <a href="https://drive.google.com/open?id=17Vo8lHDHgYS4TJJ8OOlbIcaMLZ6mFUyE"> 4 channels </a>, at NW, NE, SE, and SW corners of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or as a <a href="https://drive.google.com/open?id=1rYcHeTCCtCoMowMQoZHPn8uG1Gww4rkX"> stereo </a> file.
+      <p class="w3-text-grey"> <b>Spatialisation</b> Rendered movies and sound tracks are available here: <a href="https://drive.google.com/drive/folders/10w3bcQ6kxXOnxIDiqnnaGLC8V0qb_T0o?usp=sharing"> </a> for 3 speakers, at the NW, NE, and SE corner of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or for a stereo setup
       </p>
 
       <h5 class="w3-padding-32"> Earthquake swarms in Pollino National Park, Italy</h5><img src="pics/pollinoscreenshot.png", width=400>
@@ -89,11 +96,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 	</ul>
       </p>
       <p class="w3-text-grey"> <b>Sonification</b> <br> Track compression with factor 1440 (1 day in 1 minute)
-	<ul> <li> "Pa": audification of seismic waveforms</li>
-	     <li> "Pb": envelope extraction from seismic waveforms, then fill with noise (either low-passed at 300 Hz or band-passed between 100 and 3000 Hz)</li>
+	<ul> <li> "P1": audification of seismic waveforms</li>
+	     <li> "P2a": envelope extraction from seismic waveforms, filled with Gaussian noise (low-passed at 300 Hz)</li>
+	     <li> "P2b": envelope extraction from seismic waveforms, filled with Gaussian noise (band-passed between 100 and 3000 Hz)</li>
 	</ul>
       </p>
-      <p class="w3-text-grey"> <b>Spatialisation</b> It is either available for <a href="https://drive.google.com/open?id=1ZnnIL4EOS_mhmBJOUKpwOBwHMaa2qfZj"> 4 channels </a>, at each corner of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or as a <a href="https://drive.google.com/open?id=1jc6HqmfiabddM2zceIdzIm4qB9OjYOwo"> stereo file </a> (ongoing work). 
+      <p class="w3-text-grey"> <b>Spatialisation</b> Rendered movies and sound tracks are available here: <a href="https://drive.google.com/drive/folders/10w3bcQ6kxXOnxIDiqnnaGLC8V0qb_T0o?usp=sharing"> </a> for 4 speakers, 1 at each corner of the region of interest (DBAP technique -- inverse squared station/speaker distance -> speaker amplitude), or for a stereo setup
       </p>
 
     </div>
